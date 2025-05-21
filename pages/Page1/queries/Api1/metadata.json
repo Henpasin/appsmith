@@ -11,14 +11,14 @@
           "value": "application/json"
         }
       ],
-      "body": "",
+      "body": "{{distIds}}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "application/json"
       },
       "headers": [],
-      "httpMethod": "POST",
+      "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
       "path": "/webhook-test/stock",
@@ -39,7 +39,11 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": true,
     "name": "Api1",
     "pageId": "Page1",
